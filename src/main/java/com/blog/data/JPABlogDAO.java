@@ -15,15 +15,5 @@ public class JPABlogDAO implements BlogDAO {
 		em.getTransaction().commit();
 		em.close();
 	}
-	@Override
-	public User findUser(int userId) {
-		// TODO Auto-generated method stub
-		EntityManager em = factory.createEntityManager();
-		em.getTransaction().begin();
-		User userInfo = em.find(User.class, userId);
-		em.getTransaction().commit();
-		em.close();
-		return userInfo;
-	}
 
 }
