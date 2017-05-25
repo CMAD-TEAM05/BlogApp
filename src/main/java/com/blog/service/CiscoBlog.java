@@ -13,5 +13,9 @@ public class CiscoBlog implements BlogInterface{
 		dao.addUser(user);
 		return;
 	}
-
+	@Override
+	public User findUser(int userId){
+		User userInfo = dao.findUser(userId);
+		return userInfo;
+	}
 }

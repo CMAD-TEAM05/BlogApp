@@ -1,5 +1,6 @@
 package com.blog.api;
 
 public interface BlogInterface {
-	void addUser(User user);
+	public void addUser(User user);
+	public User findUser(int userId);
 }

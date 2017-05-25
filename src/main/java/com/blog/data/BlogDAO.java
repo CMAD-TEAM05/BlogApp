@@ -4,4 +4,5 @@ import com.blog.api.User;
 
 public interface BlogDAO {
 	public void addUser(User user);
+	public User findUser(int userId);
 }
